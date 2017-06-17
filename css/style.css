@@ -7931,7 +7931,8 @@ header {
         line-height: 2; }
       header.bottom.sticky-header .contact-number {
         display: block;
-        line-height: 1.8; }
+        margin-top: -17px;
+        font-size: 0.8125rem; }
       header.bottom.sticky-header .logo {
         display: block; }
   header .logo {
