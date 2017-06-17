@@ -1,0 +1,79 @@
+@import 'font-family';
+@import 'color';
+@import 'mixin';
+@import 'function';
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: $font-stack;
+  color: $color-primary;
+  font-size: 1rem;
+   
+}
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+}
+
+.container-small {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.container-950 {
+  width: 100%;
+  max-width: 950px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $font-stack;
+}
+
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+a {
+  color: $color-text-blue;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-darker-blue;
+    text-decoration: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+
+}
+
+textarea:focus,
+.form-control:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {   
+  border-color: inherit;
+  box-shadow: none;
+  outline: 0 none;
+}

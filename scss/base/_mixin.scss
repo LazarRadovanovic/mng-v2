@@ -1,0 +1,34 @@
+// border radius
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  -o-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// gradient
+@mixin gradient($start-color, $end-color) {
+  background: $end-color;
+  background: -moz-linear-gradient(top, $start-color 0%, $end-color 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start-color), color-stop(100%,$end-color));
+  background: -webkit-linear-gradient(top, $start-color 0%,$end-color 100%);
+  background: -o-linear-gradient(top, $start-color 0%,$end-color 100%);
+  background: -ms-linear-gradient(top, $start-color 0%,$end-color 100%);
+  background: linear-gradient(top bottom, $start-color 0%,$end-color 100%);
+}
+
+@mixin box-shadow () {
+  -webkit-box-shadow:   0px 0px 25px -4px rgba(0,0,0,0.18);
+  -moz-box-shadow:   0px 0px 25px -4px rgba(0,0,0,0.18);
+  -ms-box-shadow:   0px 0px 25px -4px rgba(0,0,0,0.18);
+  -o-box-shadow:   0px 0px 25px -4px rgba(0,0,0,0.18);
+  box-shadow:   0px 0px 25px -4px rgba(0,0,0,0.18);
+}
+
+@mixin bg-cover () {
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

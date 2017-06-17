@@ -1,0 +1,132 @@
+footer {
+	color: $color-white;
+	border-bottom: 13px solid $color-red;
+	padding: 44px 0 9px 0;
+	background: $color-darker-blue;
+
+	a {
+		color: $color-white;
+
+		&:hover {
+			color: $color-white;
+		}
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		li {
+			margin-bottom: 20px;
+		}
+	}
+
+	h3 {
+		font-size: 1.5rem;
+		font-weight: 900;
+	}
+
+	.social {
+		li {
+			@include border-radius(50%);
+
+			border: 1px solid $color-white;	
+			font-size: 25px;
+			height: 46px;
+			width:46px; 
+			padding: 5px;
+			margin-right: 10px;	
+			display: inline-block;
+			text-align: center;
+
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+
+	.email-input {
+		padding: 0 15px 0 115px;
+
+		
+		button {
+			background: $color-white;	
+			-webkit-border-top-right-radius: 25px;
+			-webkit-border-bottom-right-radius: 25px;
+			-moz-border-radius-topright: 25px;
+			-moz-border-radius-bottomright: 25px;
+			border-top-right-radius: 25px;
+			border-bottom-right-radius: 25px;
+			padding: 0;
+			width:50px;
+			text-align: center;
+			float: right;
+
+			i {
+				color: $color-green;
+				font-size: 2.5rem;
+			}
+		}
+
+		input {
+			-webkit-border-top-left-radius: 25px;
+			-webkit-border-bottom-left-radius: 25px;
+			-moz-border-radius-topleft: 25px;
+			-moz-border-radius-bottomleft: 25px;
+			border-top-left-radius: 25px;
+			border-bottom-left-radius: 25px;		
+			padding: 10px 15px;
+			background: transparent;
+			width: -webkit-calc(100% - 50px);
+		    width:    -moz-calc(100% - 50px);
+		    width:         calc(100% - 50px);
+		    font-size: 1rem;
+		}
+
+		button,input {
+			height: 46px;
+			border: 2px solid $color-white;
+			outline: none;
+		}
+	}
+}
+
+.newsletter {
+	padding: 23px 0;
+	border-top: 1px solid $color-white;
+	border-bottom: 1px solid $color-white;
+	font-size: 1.25rem;
+	margin: 50px 0;
+}
+
+.contact-info {
+	position: relative;
+
+	.logo {
+		position: absolute;
+		left: 0;
+		top: 0;
+	}
+
+	h5 {
+		font-size: 1.3rem;
+		font-weight: 700;
+		margin: 0 0 35px 0;
+	}
+
+	h6 {
+		margin: 0 0 5px 0;
+		font-size: 1rem;
+		font-weight: 400;
+	}
+}
+
+.border-box {
+	min-height: 300px;
+	border-right: 1px solid $color-white;
+}
+
+.col-sm-3:last-of-type .border-box {
+		border-right: none;
+}
