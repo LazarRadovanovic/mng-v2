@@ -7,5 +7,12 @@ $(function() {
 		  $('[data-original-title]').popover('hide');
 		}
 	});
+
+	$('.pricing a').click(function() {
+      $("html, body").animate({
+          scrollTop: $( $(this).attr("href") ).offset().top - 150 
+      }, 500);
+      return false;
+  });
 });
 

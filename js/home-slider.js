@@ -9,7 +9,7 @@ $(function() {
     return false;
   });
 
-  $(window).resize(function(){
-  	$("#carousel").waterwheelCarousel();
-	});
+  $( window ).on( "orientationchange", function( event ) {
+    carousel.reload()
+  });  
 });

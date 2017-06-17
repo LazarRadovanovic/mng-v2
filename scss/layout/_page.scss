@@ -86,10 +86,6 @@
 	&.news-home {
 		text-align: center;
 
-		.row {
-			width: 100%;
-		}
-
 		.border-right {
 			border-right: 1px solid #bcbcbc;
 		}
@@ -835,6 +831,10 @@ h2.blue-title {
 
 	&:hover {
 		background: #fefefe;
+	}
+
+	.btn-green-filled {
+		margin-top: 20px;
 	}
 
 	span {
